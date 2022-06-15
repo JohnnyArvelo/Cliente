@@ -6,3 +6,12 @@ const p = document.createElement("p");
 p.textContent = "Bienvenido al pais de las maravillas";
 // 4. Append the p element to the div element
 app?.appendChild(p);
+
+fetch("http://localhost:5000/socies/")
+.then (resp =>{
+    resp.json()
+    .then(data=>{
+        console.log(data.mensaje);
+        app?.appendChild(p);
+    })
+});
