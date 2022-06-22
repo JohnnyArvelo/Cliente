@@ -163,16 +163,17 @@ section {
 }
 
 table{
-  width: 120%;
-  height: 120px;
+  width: 100%;
+  height: 50%;
   background: #520e5f;
   color: rgb(255, 255, 255);
   justify-content: center;
 }
 
+
 td{
-  font-size: 16px;
-  margin: 16px 0;
+  font-size: 18px;
+  margin: 20px 0;
 }
 /* Propios del programa */
 :root{
