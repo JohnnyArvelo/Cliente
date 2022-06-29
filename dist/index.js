@@ -69,13 +69,17 @@ function showSocie(socie) {
             input_edad.type = "text";
             input_edad.value = socie.edad.toString(10);
             input_edad.className = "input-edit-socie";
+            let td_button = document.createElement("button");
+            td_button.textContent = "Actualizar";
             form.appendChild(input_nombre);
             form.appendChild(input_apellido);
             form.appendChild(input_nick);
             form.appendChild(input_edad);
+            form.appendChild(td_button);
             let p = document.createElement("p");
             p.textContent = data.socie.nombre;
-            app === null || app === void 0 ? void 0 : app.appendChild(form);
+            app === null || app === void 0 ? void 0 : app.replaceChildren(form);
+            //app?.appendChild(form);
         });
     });
 }

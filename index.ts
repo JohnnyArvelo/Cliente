@@ -80,15 +80,20 @@ function showSocie (socie:Socie){
         input_edad.value= socie.edad.toString(10);
         input_edad.className="input-edit-socie";
 
+        let td_button = document.createElement("button");
+        td_button.textContent ="Actualizar";
+
 
         form.appendChild(input_nombre);
         form.appendChild(input_apellido);
         form.appendChild(input_nick);
         form.appendChild(input_edad);
+        form.appendChild(td_button);
 
         let p= document.createElement("p");
         p.textContent = data.socie.nombre;
-        app?.appendChild(form);
+        app?.replaceChildren(form);
+        //app?.appendChild(form);
         });
     });
 }
